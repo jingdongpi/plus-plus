@@ -54,14 +54,14 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					DEFAULT: '#1a3b5d', // Finance blue as sidebar background
+					foreground: '#ffffff', // White text
+					primary: '#f7c948', // Finance gold for primary actions
+					'primary-foreground': '#1a3b5d', // Finance blue as text on gold bg
+					accent: 'rgba(247, 201, 72, 0.1)', // Light gold for hover
+					'accent-foreground': '#f7c948', // Gold text for accent
+					border: 'rgba(255, 255, 255, 0.1)', // Subtle white border
+					ring: 'rgba(247, 201, 72, 0.3)', // Gold ring for focus
 				},
 				// Custom colors for our financial app
 				'finance-blue': '#1a3b5d',
