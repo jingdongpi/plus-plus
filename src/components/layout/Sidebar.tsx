@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { Home, FileText, Book } from "lucide-react";
+import { Home, FileText, Book, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLocation, Link } from "react-router-dom";
 import {
@@ -38,6 +37,11 @@ const MainSidebar = () => {
       title: "科目管理",
       path: "/?tab=accounts",
       icon: Book,
+    },
+    {
+      title: "系统设置",
+      path: "/settings",
+      icon: Settings,
     },
   ];
 
