@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Home, FileText, Book } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import {
   Sidebar,
   SidebarContent,
@@ -68,10 +68,10 @@ const MainSidebar = () => {
                 asChild
                 tooltip={item.title}
               >
-                <a href={item.path}>
+                <Link to={item.path}>
                   <item.icon className="size-4" />
                   <span>{item.title}</span>
-                </a>
+                </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
           ))}

@@ -6,6 +6,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 import MainSidebar from "./Sidebar";
 
 const Header = () => {
@@ -23,7 +24,9 @@ const Header = () => {
               <MainSidebar />
             </SheetContent>
           </Sheet>
-          <h1 className="text-xl font-bold">内部财务管理系统</h1>
+          <Link to="/" className="text-xl font-bold">
+            <h1>内部财务管理系统</h1>
+          </Link>
         </div>
       </div>
     </header>
